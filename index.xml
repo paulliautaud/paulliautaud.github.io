@@ -9,7 +9,9 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Chapter 1 - Data Structures</title><link>/teaching/python/01_python_basis/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>/teaching/python/01_python_basis/</guid><description>&lt;p>First pratical&lt;/p>
+&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Chapter 0 - Preliminaries</title><link>/teaching/python/00_preliminaries/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>/teaching/python/00_preliminaries/</guid><description>&lt;p>This section will show and demistify the main steps to set Python and Anaconda environment on any laptop.&lt;/p>
+&lt;h1 id="first-step">First step&lt;/h1></description></item><item><title>Chapter 1 - Data Structures</title><link>/teaching/python/01_python_basis/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>/teaching/python/01_python_basis/</guid><description>&lt;p>The associated slides are the following :&lt;/p>
+&lt;p>You can run this first pratical &lt;a href="https://mybinder.org/v2/gh/paulliautaud/python_stan/HEAD" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;h2 id="tuple">Tuple&lt;/h2>
 &lt;p>A &lt;strong>tuple&lt;/strong> is an immutable array data structure in Python with the following characteristics:&lt;/p>
 &lt;ul>
@@ -17,7 +19,202 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;li>can hold different types of data at the same time&lt;/li>
 &lt;li>can not be modified
 We can generate tuples using curve brackets.&lt;/li>
-&lt;/ul></description></item><item><title>TP1</title><link>/teaching/computational_statistics/01_computational/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>/teaching/computational_statistics/01_computational/</guid><description>&lt;p>First pratical with basis tools of R code.&lt;/p>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">numpy&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">np&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">math&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">l&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>Note: ugfheijoksdplzk&lt;/p>
+&lt;/blockquote>
+&lt;p>L&amp;rsquo;entier des chapitres est disponible au format
+&lt;a href="https://python.guillod.org/" target="_blank" rel="noopener">HTML&lt;/a> et &lt;a href="https://python.guillod.org/python.pdf" target="_blank" rel="noopener">PDF&lt;/a>.
+Ce notebook peut également être exécuté sur &lt;a href="https://notebooks.gesis.org/binder/v2/gh/guillod/python/master?urlpath=lab/tree/chap02.ipynb" target="_blank" rel="noopener">GESIS&lt;/a>.&lt;/p>
+&lt;h1 id="1---structures-de-données">1 - Structures de données&lt;/h1>
+&lt;div id="ch:structures">&lt;/div>
+&lt;p>Pour représenter des structures de données, Python propose quatre types de base: les listes (type &lt;code>list&lt;/code>), les tuples (type &lt;code>tuple&lt;/code>), les ensembles (type &lt;code>set&lt;/code>) et les dictionnaires (type &lt;code>dict&lt;/code>). Le but de ce chapitre est de montrer les différences fondamentales entre ces structures de données et d&amp;rsquo;expliquer à quoi elles sont le plus adaptées. La documentation détaillée sur les structures de données est disponible &lt;a href="https://docs.python.org/fr/3/tutorial/datastructures.html" target="_blank" rel="noopener">ici&lt;/a>.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Concepts abordés:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>structures de données (liste, tuple, ensemble, dictionnaire)&lt;/li>
+&lt;li>types mutable et immutable&lt;/li>
+&lt;li>type hashable&lt;/li>
+&lt;li>compréhensions de liste, ensemble et dictionnaire&lt;/li>
+&lt;li>suites numériques&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h1 id="exercice-11-listes">Exercice 1.1: Listes&lt;/h1>
+&lt;div id="exer:structures-listes">&lt;/div>
+&lt;p>Une liste est une structure permettant de stocker des éléments hétérogènes:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">list0&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">5.4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;chaîne&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Les listes sont mutables, c&amp;rsquo;est-à-dire qu&amp;rsquo;il est possible d&amp;rsquo;y modifier un élément, d&amp;rsquo;en rajouter un ou d&amp;rsquo;en supprimer un sans avoir à redéfinir toute la liste.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">list0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">False&lt;/span> &lt;span class="c1"># remplace True par False&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">list0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;nouveau&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># ajoute la chaîne de caractères &amp;#34;nouveau&amp;#34; à la liste&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">list0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">insert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">34&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># insère 34 à la place 2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">list0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">remove&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># enlève 0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>En particulier, il faut faire attention en copiant une liste. Si l&amp;rsquo;on exécute le code suivant:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">list1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">list0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">list1&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;change&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">list0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>alors &lt;code>list0&lt;/code> est aussi modifié et est égal à &lt;code>list1&lt;/code>.
+En effet, exécuter &lt;code>list1 = list0&lt;/code> ne crée pas un nouvel objet (dans la mémoire vive de l&amp;rsquo;ordinateur), mais crée simplement une autre variable pointant vers le même objet.
+Pour le vérifier, il est possible d&amp;rsquo;utiliser la command &lt;code>id&lt;/code> qui renvoie l&amp;rsquo;identifiant unique d&amp;rsquo;une variable : si deux variables ont le même identifiant, alors elles pointent vers le même objet.
+C&amp;rsquo;est le cas avec le code &lt;code>list1 = list0&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">id&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">list0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nb">id&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">list1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Pour créer une vraie copie, il faut utiliser la méthode &lt;code>copy&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">list2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">list0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">copy&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">list2&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;rechange&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">list0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>qui ne modifie pas &lt;code>list0&lt;/code>.
+À noter qu&amp;rsquo;il est possible de modifier les éléments d&amp;rsquo;une liste à l&amp;rsquo;intérieur d&amp;rsquo;une fonction:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">l&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">list0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Enfin il est possible de créer des listes à l&amp;rsquo;aide de la compréhension de listes:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">list1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">)]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>a)&lt;/strong>
+Chercher dans la documentation la syntaxe pour concaténer deux listes.&lt;/p>
+&lt;p>&lt;strong>Indication:&lt;/strong>
+Voir la documentation &lt;a href="https://docs.python.org/fr/3/library/stdtypes.html#sequence-types-list-tuple-range" target="_blank" rel="noopener">ici&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>b)&lt;/strong>
+Chercher dans la documentation la syntaxe pour extraire une tranche d&amp;rsquo;une liste, c&amp;rsquo;est-à-dire: si &lt;code>a&lt;/code> est par exemple une liste de longueur 10, retourner les éléments de 6 à 9.&lt;/p>
+&lt;p>&lt;strong>Indication:&lt;/strong>
+Voir la documentation &lt;a href="https://docs.python.org/fr/3/library/stdtypes.html#sequence-types-list-tuple-range" target="_blank" rel="noopener">ici&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>c)&lt;/strong>
+Chercher dans la documentation la syntaxe pour retourner la longueur d&amp;rsquo;une liste.&lt;/p>
+&lt;p>&lt;strong>d)&lt;/strong>
+Écrire une fonction &lt;code>fibonacci(N)&lt;/code> qui retourne la liste des $N\geq 2$ premiers termes de la suite de Fibonacci définie par $u_{n+2} = u_{n+1}+u_n$ avec $u_0=0$ et $u_1=1$.&lt;/p>
+&lt;p>&lt;strong>e)&lt;/strong>
+Écrire une fonction &lt;code>pascal(N)&lt;/code> qui retourne la $N$-ième ligne du triangle de Pascal:&lt;/p>
+&lt;center>&lt;img src="https://python.guillod.org/fig/pascal.png" style="width:90%;max-width:150px;">&lt;/center>
+&lt;p>&lt;strong>f)&lt;/strong>
+Soit les suites $(u_n)&lt;em>{n\in\mathbb{N}}$ et $(v_n)&lt;/em>{n\in\mathbb{N}}$ définies par $u_0=1$, $v_0=1$, et&lt;/p>
+&lt;p>$$
+\begin{align*}
+u_{n+1} &amp;amp;= u_n + v_n ,, &amp;amp; v_{n+1} &amp;amp;= 2u _n - v_n ,,
+\end{align*}
+$$&lt;/p>
+&lt;p>pour $n\geq0$. Calculer $u_{100}$ et $v_{100}$.&lt;/p>
+&lt;p>&lt;strong>Réponse:&lt;/strong>
+$u_{100}=v_{100}=717897987691852588770249$&lt;/p>
+&lt;p>&lt;strong>g)&lt;/strong>
+Écrire une fonction &lt;code>vk(n0,K)&lt;/code>, qui pour deux entiers $n_0$ et $K\geq1$ calcule la suite des valeurs $v_k$ définies par $v_0 = n_0$ et&lt;/p>
+&lt;p>$$
+v_{k+1}=\begin{cases}
+3v_{k}+1 &amp;amp; \text{si $v_{k}$ est impair},\
+\frac{v_{k}}{2} &amp;amp; \text{si $v_{k}$ est pair},
+\end{cases}
+$$&lt;/p>
+&lt;p>pour $0 \leq k &amp;lt; K$. Pour $K = 1 000$ et diverses valeurs de $n_0 \in {10, 100, 1 000, 10 000}$, afficher les cinq dernières
+valeurs calculées, c&amp;rsquo;est-à-dire $(v_{K-4},v_{K-3},v_{K-2},v_{K-1},v_K)$.&lt;/p>
+&lt;p>&lt;strong>Réponse:&lt;/strong>
+Les assertions suivantes sont vraies:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">vk&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">vk&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">100&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">vk&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">vk&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10000&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;!-- --- end exercise --- -->
+&lt;!-- --- begin exercise --- -->
+&lt;h1 id="exercice-12-tuples">Exercice 1.2: Tuples&lt;/h1>
+&lt;div id="exer:structures-tuples">&lt;/div>
+&lt;p>Les tuples permettent tout comme les listes de stocker des éléments hétérogènes:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">tuple0&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">5.4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;chaîne&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Mais au contraire des listes, les tuples ne sont pas mutables. Il n&amp;rsquo;est pas possible d&amp;rsquo;y modifier un élément, d&amp;rsquo;en rajouter un ou d&amp;rsquo;en supprimer un sans redéfinir tout le tuple.
+L&amp;rsquo;avantage d&amp;rsquo;un tuple sur une liste est qu&amp;rsquo;il est hashable, ce qui implique qu&amp;rsquo;il peut être utilisé comme clef dans un dictionnaire ou inclus dans un ensemble.&lt;/p>
+&lt;p>Une fonction de hachage est une fonction injective permettant de calculer un identifiant unique pour chaque entrée,
+et donc de vérifier si deux entrées sont identiques en comparant leurs identifiants, ce qui est beaucoup plus rapide que de comparer toutes les entrées.
+Une fonction de hashage ne peut s&amp;rsquo;appliquer que sur des éléments pas mutables car sinon il faudrait modifier l&amp;rsquo;identifiant à chaque modification de l&amp;rsquo;élément.&lt;/p>
+&lt;p>Enfin il est possible d&amp;rsquo;affecter des variables à l&amp;rsquo;intérieur d&amp;rsquo;un tuple, par exemple:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">9&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Cela est en particulier très utile pour échanger deux variables sans avoir à utiliser une variable supplémentaire:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>a)&lt;/strong>
+Vérifier qu&amp;rsquo;un tuple est bien immutable.&lt;/p>
+&lt;p>&lt;strong>b)&lt;/strong>
+Définir une fonction &lt;code>mdlast(lst,val)&lt;/code> ayant pour argument une liste de tuples d&amp;rsquo;entiers &lt;code>lst&lt;/code> et un entier &lt;code>val&lt;/code> et retourner la liste de tuples avec le dernier élément de chaque tuple remplacé par &lt;code>val&lt;/code>. Par exemple si &lt;code>lst = [(10, 20), (30, 40, 50, 60), (70, 80, 90)]&lt;/code> alors &lt;code>mdlast(lst,100)&lt;/code> doit retourner &lt;code>[(10, 100), (30, 40, 50, 100), (70, 80, 100)]&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>c)&lt;/strong>
+Comment convertir un tuple en liste et réciproquement ?&lt;/p>
+&lt;h1 id="exercice-13-ensembles">Exercice 1.3: Ensembles&lt;/h1>
+&lt;div id="exer:structures-ensembles">&lt;/div>
+&lt;p>Les ensembles permettent de stocker des éléments hétérogènes au sens mathématique de la théorie des ensembles:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">set0&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">5.4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;chaîne&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Il est possible de tester si un élément appartient à un ensemble:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="s2">&amp;#34;chaîne&amp;#34;&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">set0&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;dedans&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Les ensembles sont mutables, il est donc possible de rajouter ou retirer un élément d&amp;rsquo;un ensemble:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">set0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">add&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">18&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># ajoute 18 à l&amp;#39;ensemble&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">set0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">add&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># ajoute 0 à l&amp;#39;ensemble (ne fait rien car 0 est déjà dedans)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">set0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">remove&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;chaîne&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># retire &amp;#34;chaîne de l&amp;#39;ensemble&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>En revanche les ensembles ne peuvent contenir que des éléments hashables, c&amp;rsquo;est-à-dire immutables.
+La raison est que les ensembles utilisent des &lt;a href="https://fr.wikipedia.org/wiki/Table_de_hachage" target="_blank" rel="noopener">tables de hachage&lt;/a> permettant de calculer très rapidement si un élément est présent dans un ensemble, bien plus rapidement que dans une liste ou un tuple.
+En particulier un ensemble ne peut pas contenir un autre ensemble:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">set1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{{&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">},{&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">},{&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">TypeError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">unhashable&lt;/span> &lt;span class="nb">type&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s1">&amp;#39;set&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>À noter qu&amp;rsquo;il existe également en Python des ensembles immutables &lt;code>frozenset&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">frozenset0&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">frozenset&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">5.4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;chaîne&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Une chaîne de caractères peut être transformée en ensemble:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">set1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">set&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;abracadabra&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Comme pour les listes, il est possible de faire des compréhensions d&amp;rsquo;ensembles:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">set2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="s1">&amp;#39;abracadabra&amp;#39;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="s1">&amp;#39;abc&amp;#39;&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Dans cet exemple les chaînes de caractères sont automatiquement transformées en ensemble.
+À noter que l&amp;rsquo;ensemble vide est défini par &lt;code>set()&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>a)&lt;/strong>
+Définir une fonction &lt;code>divisible(n)&lt;/code> qui retourne l&amp;rsquo;ensemble des nombres entiers divisibles par &lt;code>n&lt;/code> inférieurs ou égaux à 100.&lt;/p>
+&lt;p>&lt;strong>b)&lt;/strong>
+Chercher dans la documentation comment faire l&amp;rsquo;intersection, l&amp;rsquo;union, et la différence de deux ensembles. Déterminer les nombres inférieurs ou égaux à 100 qui sont non divisibles par 2 mais divisibles par 3 et 5.&lt;/p>
+&lt;p>&lt;strong>Indication:&lt;/strong>
+Voir la documentation de &lt;code>set&lt;/code> &lt;a href="https://docs.python.org/fr/3/library/stdtypes.html#set" target="_blank" rel="noopener">ici&lt;/a>.&lt;/p>
+&lt;h1 id="exercice-14-dictionnaires">Exercice 1.4: Dictionnaires&lt;/h1>
+&lt;div id="exer:structures-dictionnaires">&lt;/div>
+&lt;p>Les dictionnaires sont une structure permettant de stocker des éléments hétérogènes indexés par des clefs (elles aussi hétérogènes):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s2">&amp;#34;pommes&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;poires&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">12&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Les éléments d&amp;rsquo;un dictionnaire sont accessibles par les clefs:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;pommes&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">12&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Un dictionnaire peut être vu comme un tableau associatif associant à chaque clef une valeur. La liste des clefs et celle des valeurs sont accessibles respectivement avec &lt;code>dict0.keys()&lt;/code> et &lt;code>dict0.values()&lt;/code>.
+Les dictionnaires sont mutables, il est donc possible de modifier une association clef-valeur et d&amp;rsquo;en rajouter ou supprimer une:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;pommes&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="c1"># modifie la valeur associée à pommes&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;oranges&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;beaucoup&amp;#34;&lt;/span> &lt;span class="c1"># rajoute oranges comme clef avec la valeur &amp;#34;beaucoup&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">del&lt;/span> &lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;poires&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="c1"># supprime le couple clef-valeur associé à poires&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;pommes&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># supprime le couple clef-valeur associé à pommes&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Bien qu&amp;rsquo;un dictionnaire soit mutable, les clefs qui le composent doivent être des objets hashables, c&amp;rsquo;est-à-dire immutables.
+La raison est que Python utilise une fonction de hashage sur les clefs pour des questions de performance.
+Ainsi une liste ou un ensemble ne peuvent pas servir de clefs dans un dictionnaire:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">list0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;test&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">TypeError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">unhashable&lt;/span> &lt;span class="nb">type&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s1">&amp;#39;list&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">set0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;retest&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">TypeError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">unhashable&lt;/span> &lt;span class="nb">type&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s1">&amp;#39;set&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>En revanche il est possible d&amp;rsquo;avoir un tuple ou un frozenset comme clef:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">tuple0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;test&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict0&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">frozenset0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;rest&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>d&amp;rsquo;où l&amp;rsquo;intérêt des frozensets.
+Comme pour les listes et les ensembles, il est possible de faire des compréhensions de dictionnaires:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">dict1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="mi">2&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Finalement une chose intéressante avec les dictionnaires est l&amp;rsquo;unpaking illustré par l&amp;rsquo;exemple suivant:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">add&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">b&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">d&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s1">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;b&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">add&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="n">d&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>a)&lt;/strong>
+Comment définir un dictionnaire vide ?&lt;/p>
+&lt;p>&lt;strong>b)&lt;/strong>
+Comment concaténer plusieurs dictionnaires entre eux ?&lt;/p>
+&lt;p>&lt;strong>c)&lt;/strong>
+On considère une liste de mots:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">mots&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Abricot&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Airelle&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Ananas&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Banane&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Cassis&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Cerise&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Citron&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>\
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;Clémentine&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Coing&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Datte&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Fraise&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Framboise&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Grenade&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Groseille&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>\
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;Kaki&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Kiwi&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Litchi&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Mandarine&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Mangue&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Melon&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Mirabelle&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Nectarine&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>\
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;Orange&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Pamplemousse&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Papaye&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Pêche&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Poire&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Pomme&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Prune&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Raisin&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Écrire une fonction &lt;code>position(mots, x, n)&lt;/code> qui retourne la liste des mots ayant le caractère &lt;code>x&lt;/code> comme &lt;code>n&lt;/code>-ième lettre.&lt;/p>
+&lt;p>&lt;strong>Réponse:&lt;/strong>
+Par exemple &lt;code>position(mots,'e',4)&lt;/code> doit retourner la liste:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Clémentine&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Datte&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Groseille&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Pêche&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Poire&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Pomme&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Prune&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>d)&lt;/strong>
+En imaginant que la liste des mots soit très longue, alors à chaque évaluation de la fonction &lt;code>position&lt;/code> l&amp;rsquo;ensemble des mots est parcouru, ce qui prend pas mal de temps. Pour améliorer cela, construire un dictionnaire &lt;code>mots_dict&lt;/code> ayant pour clefs les tuples &lt;code>(x,n)&lt;/code> et comme valeurs la liste des mots ayant le caractère &lt;code>x&lt;/code> comme &lt;code>n&lt;/code>-ième lettre, c&amp;rsquo;est-à-dire tel que &lt;code>mots_dict[x,n]&lt;/code> retourne la même chose que &lt;code>position(mots, x , n)&lt;/code> à l&amp;rsquo;ordre près. Ainsi la liste &lt;code>mots&lt;/code> n&amp;rsquo;est parcourue qu&amp;rsquo;une seule fois lors de la construction du dictionnaire et ensuite l&amp;rsquo;évaluation du dictionnaire est extrêmement rapide pour n&amp;rsquo;importe quelle requête.&lt;/p></description></item><item><title>TP1</title><link>/teaching/computational_statistics/01_computational/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>/teaching/computational_statistics/01_computational/</guid><description>&lt;p>First pratical with basis tools of R code.&lt;/p>
 &lt;h2 id="tuple">Tuple&lt;/h2>
 &lt;p>A &lt;strong>tuple&lt;/strong> is an immutable array data structure in Python with the following characteristics:&lt;/p>
 &lt;ul>
@@ -84,6 +281,117 @@ The template is mobile first with a responsive design to ensure that your site l
 &lt;p>Copyright 2016-present &lt;a href="https://georgecushen.com" target="_blank" rel="noopener">George Cushen&lt;/a>.&lt;/p>
 &lt;p>Released under the &lt;a href="https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md" target="_blank" rel="noopener">MIT&lt;/a> license.&lt;/p></description></item><item><title>Slides</title><link>/slides/example/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>/slides/example/</guid><description>&lt;h1 id="create-slides-in-markdown-with-wowchemy">Create slides in Markdown with Wowchemy&lt;/h1>
 &lt;p>&lt;a href="https://wowchemy.com/" target="_blank" rel="noopener">Wowchemy&lt;/a> | &lt;a href="https://owchemy.com/docs/managing-content/#create-slides" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>Efficiently write slides in Markdown&lt;/li>
+&lt;li>3-in-1: Create, Present, and Publish your slides&lt;/li>
+&lt;li>Supports speaker notes&lt;/li>
+&lt;li>Mobile friendly slides&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="controls">Controls&lt;/h2>
+&lt;ul>
+&lt;li>Next: &lt;code>Right Arrow&lt;/code> or &lt;code>Space&lt;/code>&lt;/li>
+&lt;li>Previous: &lt;code>Left Arrow&lt;/code>&lt;/li>
+&lt;li>Start: &lt;code>Home&lt;/code>&lt;/li>
+&lt;li>Finish: &lt;code>End&lt;/code>&lt;/li>
+&lt;li>Overview: &lt;code>Esc&lt;/code>&lt;/li>
+&lt;li>Speaker notes: &lt;code>S&lt;/code>&lt;/li>
+&lt;li>Fullscreen: &lt;code>F&lt;/code>&lt;/li>
+&lt;li>Zoom: &lt;code>Alt + Click&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://revealjs.com/pdf-export/" target="_blank" rel="noopener">PDF Export&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="code-highlighting">Code Highlighting&lt;/h2>
+&lt;p>Inline code: &lt;code>variable&lt;/code>&lt;/p>
+&lt;p>Code block:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">porridge&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;blueberry&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">porridge&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;blueberry&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Eating...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="math">Math&lt;/h2>
+&lt;p>In-line math: $x + y = z$&lt;/p>
+&lt;p>Block math:&lt;/p>
+&lt;p>$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p>
+&lt;hr>
+&lt;h2 id="fragments">Fragments&lt;/h2>
+&lt;p>Make content appear incrementally&lt;/p>
+&lt;pre tabindex="0">&lt;code>{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code>&lt;/pre>&lt;p>Press &lt;code>Space&lt;/code> to play!&lt;/p>
+&lt;span class="fragment " >
+One
+&lt;/span>
+&lt;span class="fragment " >
+&lt;strong>Two&lt;/strong>
+&lt;/span>
+&lt;span class="fragment " >
+Three
+&lt;/span>
+&lt;hr>
+&lt;p>A fragment can accept two optional parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>class&lt;/code>: use a custom style (requires definition in custom CSS)&lt;/li>
+&lt;li>&lt;code>weight&lt;/code>: sets the order in which a fragment appears&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="speaker-notes">Speaker Notes&lt;/h2>
+&lt;p>Add speaker notes to your presentation&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{% speaker_note %}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Only the speaker can read these notes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Press &lt;span class="sb">`S`&lt;/span> key to view
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{% /speaker_note %}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Press the &lt;code>S&lt;/code> key to view the speaker notes!&lt;/p>
+&lt;aside class="notes">
+&lt;ul>
+&lt;li>Only the speaker can read these notes&lt;/li>
+&lt;li>Press &lt;code>S&lt;/code> key to view&lt;/li>
+&lt;/ul>
+&lt;/aside>
+&lt;hr>
+&lt;h2 id="themes">Themes&lt;/h2>
+&lt;ul>
+&lt;li>black: Black background, white text, blue links (default)&lt;/li>
+&lt;li>white: White background, black text, blue links&lt;/li>
+&lt;li>league: Gray background, white text, blue links&lt;/li>
+&lt;li>beige: Beige background, dark text, brown links&lt;/li>
+&lt;li>sky: Blue background, thin dark text, blue links&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>night: Black background, thick white text, orange links&lt;/li>
+&lt;li>serif: Cappuccino background, gray text, brown links&lt;/li>
+&lt;li>simple: White background, black text, blue links&lt;/li>
+&lt;li>solarized: Cream-colored background, dark green text, blue links&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;section data-noprocess data-shortcode-slide
+data-background-image="/media/boards.jpg"
+>
+&lt;h2 id="custom-slide">Custom Slide&lt;/h2>
+&lt;p>Customize the slide style and background&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">background-image&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;/media/boards.jpg&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">background-color&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;#0000FF&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;my-style&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="custom-css-example">Custom CSS Example&lt;/h2>
+&lt;p>Let&amp;rsquo;s make headers navy colored.&lt;/p>
+&lt;p>Create &lt;code>assets/css/reveal_custom.css&lt;/code> with:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h1&lt;/span>&lt;span class="o">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h2&lt;/span>&lt;span class="o">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h3&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">navy&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h1 id="questions">Questions?&lt;/h1>
+&lt;p>&lt;a href="https://github.com/wowchemy/wowchemy-hugo-modules/discussions" target="_blank" rel="noopener">Ask&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://wowchemy.com/docs/managing-content/#create-slides" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p></description></item><item><title>Slides</title><link>/teaching/python/01_python_basis_slides/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>/teaching/python/01_python_basis_slides/</guid><description>&lt;h1 id="introduction-to-python-programming">Introduction to Python Programming&lt;/h1>
+&lt;p>&lt;a href="https://github.com/paulliautaud" target="_blank" rel="noopener">Github&lt;/a> | &lt;a href="/teaching/python/01_python_basis/">Course 1&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h2 id="features">Features&lt;/h2>
 &lt;ul>
