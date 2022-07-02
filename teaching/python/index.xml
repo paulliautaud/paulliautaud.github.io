@@ -1,5 +1,152 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python ECG | Paul Liautaud</title><link>https://paulliautaud.github.io/teaching/python/</link><atom:link href="https://paulliautaud.github.io/teaching/python/index.xml" rel="self" type="application/rss+xml"/><description>Python ECG</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><image><url>https://paulliautaud.github.io/media/icon_hu5a8bb89b166067dad42de6c6e5349de5_15995_512x512_fill_lanczos_center_3.png</url><title>Python ECG</title><link>https://paulliautaud.github.io/teaching/python/</link></image><item><title>Chapter 0 - Preliminaries</title><link>https://paulliautaud.github.io/teaching/python/00_preliminaries/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://paulliautaud.github.io/teaching/python/00_preliminaries/</guid><description>&lt;p>This section will show and demistify the main steps to set Python and Anaconda environment on any laptop.&lt;/p>
-&lt;h1 id="first-step">First step&lt;/h1></description></item><item><title>Chapter 1 - Data Structures</title><link>https://paulliautaud.github.io/teaching/python/01_python_basis/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://paulliautaud.github.io/teaching/python/01_python_basis/</guid><description>&lt;p>The associated slides are the following :&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python ECG | Paul Liautaud</title><link>https://paulliautaud.github.io/teaching/python/</link><atom:link href="https://paulliautaud.github.io/teaching/python/index.xml" rel="self" type="application/rss+xml"/><description>Python ECG</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><image><url>https://paulliautaud.github.io/media/icon_hu5a8bb89b166067dad42de6c6e5349de5_15995_512x512_fill_lanczos_center_3.png</url><title>Python ECG</title><link>https://paulliautaud.github.io/teaching/python/</link></image><item><title>Chapter 0 - Preliminaries</title><link>https://paulliautaud.github.io/teaching/python/00_preliminaries/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://paulliautaud.github.io/teaching/python/00_preliminaries/</guid><description>&lt;p>This section will first present what Python is. Then, it will show and demistify the main steps to set Python and Anaconda environment on any laptop.&lt;/p>
+&lt;h2 id="first-why-python-">First, why Python ?&lt;/h2>
+&lt;p>Python is a general-purpose interpreted programming language which has the particularity of being very readable and pragmatic.
+It has a very large base of external modules, especially scientific ones, which makes it particularly attractive for programming mathematical problems.
+The fact that Python is an interpreted language makes it slower than compiled languages, but on the other hand it ensures a great speed of development which allows the human to work a little less while the computer will have to work a little more.
+This particularity has made Python one of the main programming languages used by scientists.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>The prerequisite would be to know the basics of the Python language, for example as taught in the last year&amp;rsquo;s course.&lt;/p>
+&lt;p>People who are not familiar with the basics of the Python language should take the MOOC (Massive Open Online Course) &lt;em>&lt;a href="https://www.fun-mooc.fr/fr/cours/python-3-des-fondamentaux-aux-concepts-avances-du-langage/" target="_blank" rel="noopener">Python 3 : des fondamentaux aux concepts avancés du langage&lt;/a>&lt;/em> available on the website of &lt;a href="https://www.fun-mooc.fr/" target="_blank" rel="noopener">France Université Numérique&lt;/a>.
+In case access is restricted, the videos of the MOOC are available on &lt;a href="https://www.youtube.com/channel/UCIlUBOXnXjxdjmL_atU53kA/" target="_blank" rel="noopener">YouTube&lt;/a>.&lt;/p>
+&lt;p>In addition, the realization of the exercises requires access to a computer or an online service with Python 3.6 (or more recent) completed by the following modules: &lt;code>numpy&lt;/code>, &lt;code>scipy&lt;/code>, &lt;code>sympy&lt;/code>, &lt;code>matplotlib&lt;/code>, &lt;code>numba&lt;/code>, &lt;code>networkx&lt;/code> and &lt;code>pandas&lt;/code>. The use of a code editor allowing writing in Python is also highly recommended. It is suggested here to use &lt;a href="https://jupyterlab.readthedocs.io/" target="_blank" rel="noopener">Jupyter Lab&lt;/a>, which allows both writing interactive notebooks and scripts and also adding one&amp;rsquo;s own solutions below the statements, which is very convenient. It is not necessary to use Jupyter Lab, other environments are also suitable, such as &lt;a href="https://www.spyder-ide.org/" target="_blank" rel="noopener">Spyder&lt;/a> or &lt;a href="https://jupyter-notebook.readthedocs.io/" target="_blank" rel="noopener">Jupyter Notebook&lt;/a>.&lt;/p>
+&lt;p>The following sections describe how to install and run the Python environment or use it online without installation.&lt;/p>
+&lt;h1 id="13-documentation">1.3 Documentation&lt;/h1>
+&lt;p>Il n&amp;rsquo;est généralement pas utile (ni souhaitable) de connaître toutes les fonctions et subtilités du langage Python lors d&amp;rsquo;une utilisation occasionnelle. Par contre il est indispensable de savoir utiliser la documentation de manière efficace. La documentation officielle est disponible à l&amp;rsquo;adresse &lt;a href="https://docs.python.org/" target="_blank" rel="noopener">https://docs.python.org/&lt;/a>. La langue et la version peuvent être sélectionnées en haut à gauche. Il est fortement conseillé de regarder comment la documentation est écrite et d&amp;rsquo;apprendre à l&amp;rsquo;utiliser.&lt;/p>
+&lt;h1 id="14-installation">1.4 Installation&lt;/h1>
+&lt;p>Les personnes ne pouvant ou ne voulant pas installer Python peuvent directement se rendre à la section &lt;a href="#sec:intro-lancement">1.5 Lancement de Jupyter Lab&lt;/a> pour des alternatives disponibles en ligne sans installation.&lt;/p>
+&lt;p>Il existe essentiellement quatre façons d&amp;rsquo;installer Python et les modules requis pour réaliser les exercices:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Anaconda&lt;/strong> est une distribution Python complète, c&amp;rsquo;est-à-dire qu&amp;rsquo;elle installe directement une très grande quantité de modules (beaucoup plus que nécessaire pour faire les exercices suivants). L&amp;rsquo;avantage de cette installation est qu&amp;rsquo;elle est très simple; son désavantage est qu&amp;rsquo;elle prend beaucoup d&amp;rsquo;espace disque. C&amp;rsquo;est la méthode à privilégier si vous êtes sous Windows ou MacOS et que vous n&amp;rsquo;avez pas de problème d&amp;rsquo;espace disque.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Miniconda&lt;/strong> est une version légère d&amp;rsquo;Anaconda, qui installe par défaut uniquement la base. L&amp;rsquo;avantage est qu&amp;rsquo;elle prend peu d&amp;rsquo;espace disque, mais elle requiert une action supplémentaire pour installer les modules requis pour faire les exercices. C&amp;rsquo;est la méthode à privilégier si vous êtes sous Windows ou MacOS et que vous avez peu d&amp;rsquo;espace disque disponible.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Dépôts Linux:&lt;/strong> la plupart des distributions Linux permettent d&amp;rsquo;installer Python et les modules de base directement à partir des dépôts de paquets qui les accompagnent. C&amp;rsquo;est la méthode privilégiée sous Linux.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Pip&lt;/strong> est un gestionnaire de paquets pour Python. C&amp;rsquo;est la méthode à privilégier pour ajouter un module si Python est déjà installé par votre système d&amp;rsquo;exploitation, et que ce module n&amp;rsquo;est pas inclus dans les paquets de votre distribution. Cette méthode permet une gestion plus fine et avancée des modules installés que ce qui est proposé avec les méthodes précédentes.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="installation-avec-anaconda">Installation avec Anaconda&lt;/h3>
+&lt;p>La façon la plus simple d&amp;rsquo;installer Python 3 et toutes les dépendances nécessaires sous Windows et MacOS est d&amp;rsquo;installer &lt;a href="https://anaconda.org/" target="_blank" rel="noopener">Anaconda&lt;/a>. Le désavantage d&amp;rsquo;Anaconda est que son installation prend beaucoup d&amp;rsquo;espace disque car énormément de modules sont installés par défaut. Les procédures d&amp;rsquo;installation détaillées selon chaque système d&amp;rsquo;exploitation sont décrites à l&amp;rsquo;adresse: &lt;a href="https://docs.anaconda.com/anaconda/install/" target="_blank" rel="noopener">https://docs.anaconda.com/anaconda/install/&lt;/a>. En résumé la procédure d&amp;rsquo;installation est la suivante:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Télécharger Anaconda pour Python 3 à l&amp;rsquo;adresse: &lt;a href="https://www.anaconda.com/products/individual#Downloads" target="_blank" rel="noopener">https://www.anaconda.com/products/individual#Downloads&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Double-cliquer sur le fichier téléchargé pour lancer l&amp;rsquo;installation d&amp;rsquo;Anaconda, puis suivre la procédure d&amp;rsquo;installation (il n&amp;rsquo;est pas nécessaire d&amp;rsquo;installer VS Code).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Une fois l&amp;rsquo;installation terminée, lancer Anaconda Navigator à partir du menu démarrer ou de la liste des applications.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="installation-avec-miniconda">Installation avec Miniconda&lt;/h3>
+&lt;p>La distribution &lt;a href="https://docs.conda.io/miniconda.html" target="_blank" rel="noopener">Miniconda&lt;/a> présente l&amp;rsquo;avantage sur Anaconda de prendre peu d&amp;rsquo;espace disque, au prix de devoir installer les modules nécessaires manuellement. La procédure d&amp;rsquo;installation rapide est la suivante:&lt;/p>
+&lt;ol>
+&lt;li>Télécharger Miniconda pour Python 3 à l&amp;rsquo;adresse: &lt;a href="https://docs.conda.io/miniconda.html" target="_blank" rel="noopener">https://docs.conda.io/miniconda.html&lt;/a>.&lt;/li>
+&lt;li>Double-cliquer sur le fichier téléchargé pour lancer l&amp;rsquo;installation de Miniconda, puis suivre la procédure d&amp;rsquo;installation.&lt;/li>
+&lt;li>Une fois l&amp;rsquo;installation terminée, lancer Anaconda Prompt à partir du menu Démarrer ou de la liste des applications.&lt;/li>
+&lt;li>Dans le terminal, taper la commande:
+conda install anaconda-navigator numpy scipy sympy matplotlib numba networkx pandas jupyterlab
+et confirmer l&amp;rsquo;installation des dépendances.&lt;/li>
+&lt;/ol>
+&lt;h3 id="installation-à-partir-des-dépôts">Installation à partir des dépôts&lt;/h3>
+&lt;p>La plupart des distributions Linux permettent d&amp;rsquo;installer facilement Python et les modules les plus standard directement à partir des dépôts qu&amp;rsquo;elles incluent. La procédure suivante concerne Ubuntu, mais s&amp;rsquo;adapte facilement aux autres distributions.&lt;/p>
+&lt;ol>
+&lt;li>Installer Python 3:
+sudo apt install python3 python-pip3&lt;/li>
+&lt;li>Installer les modules &lt;code>numpy&lt;/code>, &lt;code>scipy&lt;/code>, &lt;code>sympy&lt;/code>, &lt;code>matplotlib&lt;/code>, &lt;code>numba&lt;/code>, &lt;code>networkx&lt;/code> et &lt;code>pandas&lt;/code>:
+sudo apt install python3-numpy python3-scipy python3-sympy python3-matplotlib python3-numba python3-networkx python3-pandas&lt;/li>
+&lt;li>Jupyter Lab n&amp;rsquo;étant pas disponible dans les paquets d&amp;rsquo;Ubuntu, il faut l&amp;rsquo;installer avec Pip:
+pip3 install jupyterlab&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Remarque:&lt;/strong>
+Suivant les systèmes d&amp;rsquo;exploitation il faut parfois remplacer la commande &lt;code>pip3&lt;/code> par &lt;code>pip&lt;/code>. Si vous rencontrez un problème de permissions lors de l&amp;rsquo;exécution de ces commandes, il faut probablement rajouter &lt;code>--user&lt;/code> à la fin de la commande précédente.&lt;/p>
+&lt;h3 id="installation-avancée-avec-pip">Installation avancée avec Pip&lt;/h3>
+&lt;p>La procédure suivante décrit l&amp;rsquo;installation manuelle de modules avec le gestionnaire &lt;a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noopener">Pip&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>Installer Python depuis l&amp;rsquo;adresse: &lt;a href="https://www.python.org/downloads/" target="_blank" rel="noopener">https://www.python.org/downloads/&lt;/a>.&lt;/li>
+&lt;li>Installer Pip depuis l&amp;rsquo;adresse: &lt;a href="https://pip.pypa.io/en/stable/installation/" target="_blank" rel="noopener">https://pip.pypa.io/en/stable/installation/&lt;/a>&lt;/li>
+&lt;li>Installer les modules requis en tapant la ligne de commande suivante dans un terminal:
+pip3 install numpy scipy sympy matplotlib numba networkx pandas jupyterlab
+&lt;strong>Remarque:&lt;/strong>
+Suivant les systèmes d&amp;rsquo;exploitation il faut remplacer la commande &lt;code>pip3&lt;/code> par &lt;code>pip&lt;/code>. Si vous rencontrez un problème de permissions lors de l&amp;rsquo;exécution de ces commandes, il faut probablement rajouter &lt;code>--user&lt;/code> à la fin de la commande précédente.&lt;/li>
+&lt;/ol>
+&lt;h1 id="15-lancement-de-jupyter-lab">1.5 Lancement de Jupyter Lab&lt;/h1>
+&lt;div id="sec:intro-lancement">&lt;/div>
+&lt;h3 id="avec-anaconda-navigator">Avec Anaconda Navigator&lt;/h3>
+&lt;p>Si Anaconda ou Miniconda a été installé, il suffit de lancer Anaconda Navigator et de cliquer sur l&amp;rsquo;icône «jupyterlab»:&lt;/p>
+&lt;center>&lt;img src="https://python.guillod.org/fig/anaconda.png" style="width:90%;max-width:900px;">&lt;/center>
+&lt;h3 id="en-ligne-de-commande">En ligne de commande&lt;/h3>
+&lt;p>Pour lancer Jupyter Lab en ligne de commande, il faut taper &lt;code>jupyter lab&lt;/code> dans un terminal. Pour quitter, il faut cliquer sur «Shutdown» dans le menu «File» de la fenêtre Jupyter Lab. Il est aussi possible de taper &lt;code>Ctrl+C&lt;/code> suivi de &lt;code>y&lt;/code> (en anglais) ou &lt;code>o&lt;/code> (en français) dans le terminal où la commande &lt;code>jupyter lab&lt;/code> a été exécutée.&lt;/p>
+&lt;h3 id="sur-le-bureau-de-lutes">Sur le bureau de l&amp;rsquo;UTES&lt;/h3>
+&lt;p>&lt;strong>Avertissement:&lt;/strong>
+Disponible seulement pour les personnes disposant d&amp;rsquo;un accès informatique à Sorbonne Université.&lt;/p>
+&lt;p>Aller sur le site de l&amp;rsquo;&lt;a href="https://lutes.upmc.fr/bdl-ext.php" target="_blank" rel="noopener">UTES&lt;/a> puis cliquer sur l&amp;rsquo;icône correspondante à votre système d&amp;rsquo;exploitation et suivez les instructions pour vous connecter au bureau à distance.&lt;/p>
+&lt;p>Pour lancer Jupyter Lab une fois connecté au bureau de l&amp;rsquo;UTES:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>cliquer sur la loupe située en haut;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>taper &lt;code>jupyter lab&lt;/code> dans le champs de rechercher suivi de la touche &lt;code>ENTRÉE&lt;/code>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>cliquer sur «JUPYTER LAB POUR PYTHON 3.6»;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ne pas fermer la fenêtre noire avant d&amp;rsquo;avoir terminé de travailler sous Jupyter Lab.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="en-ligne-sans-installation">En ligne sans installation&lt;/h3>
+&lt;p>Pour les personnes ne pouvant ou ne voulant pas installer Python et les dépendances nécessaires sur leur propre ordinateur et n&amp;rsquo;ayant pas accès au bureau de l&amp;rsquo;UTES, il est possible d&amp;rsquo;utiliser Jupyter Lab en ligne avec GESIS en cliquant &lt;a href="https://notebooks.gesis.org/binder/v2/gh/guillod/python/master?urlpath=lab/tree/chap01.ipynb" target="_blank" rel="noopener">ici&lt;/a>.
+Aucun compte n&amp;rsquo;est nécessaire mais les documents stockés sans compte utilisateur sont automatiquement effacés donc il faut impérativement les sauvegarder sur votre propre ordinateur avant de quitter. Il est également possible de créer un compte utilisateur sur GESIS à l&amp;rsquo;adresse &lt;a href="https://notebooks.gesis.org/hub/" target="_blank" rel="noopener">https://notebooks.gesis.org/hub/&lt;/a>, ce qui permet ensuite de sauvegarder vos documents. Une fois authentifié sur GESIS, entrer les paramètres suivants pour avoir accès aux énoncés des exercices:&lt;/p>
+&lt;center>&lt;img src="https://python.guillod.org/fig/gesis.png" style="width:90%;max-width:900px;">&lt;/center>
+&lt;p>Pour utiliser Jupyter Lab plutôt que Jupyter Nootebook sur GESIS, il suffit de remplacer &lt;code>tree&lt;/code> par &lt;code>lab&lt;/code> à la fin de l&amp;rsquo;URL.&lt;/p>
+&lt;p>Sinon différents services offrent la possibilité d&amp;rsquo;utiliser gratuitement Jupyter Lab après création d&amp;rsquo;un compte:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://cocalc.com/" target="_blank" rel="noopener">CoCalc&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://colab.research.google.com/" target="_blank" rel="noopener">Google Colaboratory&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="16-utilisation-de-jupyter-lab">1.6 Utilisation de Jupyter Lab&lt;/h1>
+&lt;p>Une fois Jupyter Lab lancé, la fenêtre suivante doit apparaître dans un navigateur:&lt;/p>
+&lt;center>&lt;img src="https://python.guillod.org/fig/jupyter.png" style="width:90%;max-width:900px;">&lt;/center>
+&lt;p>Jupyter Lab permet essentiellement de traiter trois types de documents: les &lt;strong>notebooks&lt;/strong>, les &lt;strong>scripts&lt;/strong> et les &lt;strong>terminaux&lt;/strong>. Un notebook est constitué de cellules qui peuvent contenir soit du code soit du texte au format Markdown. Les cellules peuvent être évaluées de manière interactive à la demande, ce qui permet une grande flexibilité. Un script Python est simplement un fichier texte contenant des instructions Python. Il s&amp;rsquo;exécute en entier de A à Z et il n&amp;rsquo;est pas possible d&amp;rsquo;interagir interactivement avec lui pendant son exécution (à moins que cela n&amp;rsquo;ait été explicitement programmé). Pour exécuter un script python il est nécessaire d&amp;rsquo;ouvrir un terminal.&lt;/p>
+&lt;p>Un notebook est composé de cellules, ces dernières pouvant être principalement de deux types: des cellules de code et des cellules de texte, comme représenté sur la figure suivante.
+Les cellules de texte peuvent contenir des formules LaTeX.&lt;/p>
+&lt;center>&lt;img src="https://python.guillod.org/fig/jupyterlab.png" style="width:90%;max-width:900px;">&lt;/center>
+&lt;p>La documentation détaillée de Jupyter Lab est disponible &lt;a href="https://jupyterlab.readthedocs.io/" target="_blank" rel="noopener">ici&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Commandes de base:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Créer un nouveau fichier: cliquer sur le bouton &lt;code>PLUS&lt;/code> situé en haut à gauche, puis choisir le type de fichier à créer.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Renommer un fichier: cliquer avec le second bouton de la souris sur le titre du notebook (soit dans l&amp;rsquo;onglet, soit dans la liste des fichiers).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Changer le type de cellules: menu déroulant permettant de choisir entre «Code» et «Markdown».&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Exécuter une cellule: combinaison des touches &lt;code>SHIFT+ENTRÉE&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Exécuter un script: taper &lt;code>python nomduscript.py&lt;/code> dans un terminal pour exécuter le script &lt;code>nomduscript.py&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Réorganiser les cellules: cliquer-déposer.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Juxtaposer des onglets: cliquer-déposer.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Remerciements:&lt;/strong> Merci à Johann Faouzi, Nicolas Lantos et Marie Postel pour leurs relectures attentives de ce recueil et pour les nombreuses corrections et suggestions. Merci également à Cédric Boutillier, Cindy Guichard et Raphaël Zanella pour avoir pointé différentes erreurs.&lt;/p></description></item><item><title>Chapter 1 - Data Structures</title><link>https://paulliautaud.github.io/teaching/python/01_python_basis/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://paulliautaud.github.io/teaching/python/01_python_basis/</guid><description>&lt;p>The associated slides are the following :&lt;/p>
 &lt;p>You can run this first pratical &lt;a href="https://mybinder.org/v2/gh/paulliautaud/python_stan/HEAD" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;h2 id="tuple">Tuple&lt;/h2>
 &lt;p>A &lt;strong>tuple&lt;/strong> is an immutable array data structure in Python with the following characteristics:&lt;/p>
