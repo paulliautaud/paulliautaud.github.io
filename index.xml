@@ -54,69 +54,48 @@ In case access is restricted, the videos of the MOOC are available on &lt;a href
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="installation-with-miniconda">Installation with Miniconda&lt;/h3>
-&lt;p>La distribution &lt;a href="https://docs.conda.io/miniconda.html" target="_blank" rel="noopener">Miniconda&lt;/a> présente l&amp;rsquo;avantage sur Anaconda de prendre peu d&amp;rsquo;espace disque, au prix de devoir installer les modules nécessaires manuellement. La procédure d&amp;rsquo;installation rapide est la suivante:&lt;/p>
+&lt;p>The &lt;a href="https://docs.conda.io/miniconda.html" target="_blank" rel="noopener">Miniconda&lt;/a> distribution has the advantage over Anaconda of taking up little disk space, at the cost of having to install the necessary modules manually. The quick installation procedure is as follows:&lt;/p>
 &lt;ol>
-&lt;li>Télécharger Miniconda pour Python 3 à l&amp;rsquo;adresse: &lt;a href="https://docs.conda.io/miniconda.html" target="_blank" rel="noopener">https://docs.conda.io/miniconda.html&lt;/a>.&lt;/li>
-&lt;li>Double-cliquer sur le fichier téléchargé pour lancer l&amp;rsquo;installation de Miniconda, puis suivre la procédure d&amp;rsquo;installation.&lt;/li>
-&lt;li>Une fois l&amp;rsquo;installation terminée, lancer Anaconda Prompt à partir du menu Démarrer ou de la liste des applications.&lt;/li>
-&lt;li>Dans le terminal, taper la commande:
-conda install anaconda-navigator numpy scipy sympy matplotlib numba networkx pandas jupyterlab
-et confirmer l&amp;rsquo;installation des dépendances.&lt;/li>
+&lt;li>Download Miniconda for Python 3 at: &lt;a href="https://docs.conda.io/miniconda.html" target="_blank" rel="noopener">https://docs.conda.io/miniconda.html&lt;/a>.&lt;/li>
+&lt;li>Double-click on the downloaded file to start the Miniconda installation, then follow the installation procedure.&lt;/li>
+&lt;li>Once the installation is complete, launch Anaconda Prompt from the Start menu or from the list of applications.&lt;/li>
+&lt;li>In the terminal, type the command:
+&lt;code>conda install anaconda-navigator numpy scipy sympy matplotlib numba networkx pandas jupyterlab&lt;/code>
+and confirm the installation of the dependencies.&lt;/li>
 &lt;/ol>
-&lt;h3 id="installation-à-partir-des-dépôts">Installation à partir des dépôts&lt;/h3>
-&lt;p>La plupart des distributions Linux permettent d&amp;rsquo;installer facilement Python et les modules les plus standard directement à partir des dépôts qu&amp;rsquo;elles incluent. La procédure suivante concerne Ubuntu, mais s&amp;rsquo;adapte facilement aux autres distributions.&lt;/p>
+&lt;h3 id="installation-from-repositories">Installation from repositories&lt;/h3>
+&lt;p>Most Linux distributions allow to easily install Python and the most standard modules directly from the repositories they include. The following procedure is for Ubuntu, but can be easily adapted to other distributions.&lt;/p>
 &lt;ol>
-&lt;li>Installer Python 3:
+&lt;li>Install Python 3:
 sudo apt install python3 python-pip3&lt;/li>
-&lt;li>Installer les modules &lt;code>numpy&lt;/code>, &lt;code>scipy&lt;/code>, &lt;code>sympy&lt;/code>, &lt;code>matplotlib&lt;/code>, &lt;code>numba&lt;/code>, &lt;code>networkx&lt;/code> et &lt;code>pandas&lt;/code>:
+&lt;li>Install the &lt;code>numpy&lt;/code>, &lt;code>scipy&lt;/code>, &lt;code>sympy&lt;/code>, &lt;code>matplotlib&lt;/code>, &lt;code>numba&lt;/code>, &lt;code>networkx&lt;/code> and &lt;code>pandas&lt;/code> modules:
 sudo apt install python3-numpy python3-scipy python3-sympy python3-matplotlib python3-numba python3-networkx python3-pandas&lt;/li>
-&lt;li>Jupyter Lab n&amp;rsquo;étant pas disponible dans les paquets d&amp;rsquo;Ubuntu, il faut l&amp;rsquo;installer avec Pip:
+&lt;li>Jupyter Lab is not available in Ubuntu packages, so it must be installed with Pip:
 pip3 install jupyterlab&lt;/li>
 &lt;/ol>
-&lt;p>&lt;strong>Remarque:&lt;/strong>
-Suivant les systèmes d&amp;rsquo;exploitation il faut parfois remplacer la commande &lt;code>pip3&lt;/code> par &lt;code>pip&lt;/code>. Si vous rencontrez un problème de permissions lors de l&amp;rsquo;exécution de ces commandes, il faut probablement rajouter &lt;code>--user&lt;/code> à la fin de la commande précédente.&lt;/p>
-&lt;h3 id="installation-avancée-avec-pip">Installation avancée avec Pip&lt;/h3>
-&lt;p>La procédure suivante décrit l&amp;rsquo;installation manuelle de modules avec le gestionnaire &lt;a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noopener">Pip&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong>
+Depending on the operating system, you may have to replace the &lt;code>pip3&lt;/code> command with &lt;code>pip&lt;/code>. If you encounter permissions problem when running these commands, you should probably add &lt;code>--user&lt;/code> to the end of the previous command.&lt;/p>
+&lt;h3 id="advanced-installation-with-pip">Advanced Installation with Pip&lt;/h3>
+&lt;p>The following procedure describes the manual installation of modules with the &lt;a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noopener">Pip&lt;/a> manager.&lt;/p>
 &lt;ol>
-&lt;li>Installer Python depuis l&amp;rsquo;adresse: &lt;a href="https://www.python.org/downloads/" target="_blank" rel="noopener">https://www.python.org/downloads/&lt;/a>.&lt;/li>
-&lt;li>Installer Pip depuis l&amp;rsquo;adresse: &lt;a href="https://pip.pypa.io/en/stable/installation/" target="_blank" rel="noopener">https://pip.pypa.io/en/stable/installation/&lt;/a>&lt;/li>
-&lt;li>Installer les modules requis en tapant la ligne de commande suivante dans un terminal:
+&lt;li>Install Python from the address: &lt;a href="https://www.python.org/downloads/" target="_blank" rel="noopener">https://www.python.org/downloads/&lt;/a>.&lt;/li>
+&lt;li>Install Pip from the address: &lt;a href="https://pip.pypa.io/en/stable/installation/" target="_blank" rel="noopener">https://pip.pypa.io/en/stable/installation/&lt;/a>&lt;/li>
+&lt;li>Install the required modules by typing the following command line in a terminal:
 pip3 install numpy scipy sympy matplotlib numba networkx pandas jupyterlab
-&lt;strong>Remarque:&lt;/strong>
-Suivant les systèmes d&amp;rsquo;exploitation il faut remplacer la commande &lt;code>pip3&lt;/code> par &lt;code>pip&lt;/code>. Si vous rencontrez un problème de permissions lors de l&amp;rsquo;exécution de ces commandes, il faut probablement rajouter &lt;code>--user&lt;/code> à la fin de la commande précédente.&lt;/li>
+&lt;strong>Note:&lt;/strong>
+Depending on the operating system, you may have to replace the &lt;code>pip3&lt;/code> command with &lt;code>pip&lt;/code>. If you encounter permissions problem when running these commands, you should probably add &lt;code>--user&lt;/code> to the end of the previous command.&lt;/li>
 &lt;/ol>
-&lt;h1 id="15-lancement-de-jupyter-lab">1.5 Lancement de Jupyter Lab&lt;/h1>
+&lt;h2 id="lauching-jupyter-lab">Lauching Jupyter Lab&lt;/h2>
 &lt;div id="sec:intro-lancement">&lt;/div>
-&lt;h3 id="avec-anaconda-navigator">Avec Anaconda Navigator&lt;/h3>
-&lt;p>Si Anaconda ou Miniconda a été installé, il suffit de lancer Anaconda Navigator et de cliquer sur l&amp;rsquo;icône «jupyterlab»:&lt;/p>
-&lt;center>&lt;img src="https://python.guillod.org/fig/anaconda.png" style="width:90%;max-width:900px;">&lt;/center>
-&lt;h3 id="en-ligne-de-commande">En ligne de commande&lt;/h3>
-&lt;p>Pour lancer Jupyter Lab en ligne de commande, il faut taper &lt;code>jupyter lab&lt;/code> dans un terminal. Pour quitter, il faut cliquer sur «Shutdown» dans le menu «File» de la fenêtre Jupyter Lab. Il est aussi possible de taper &lt;code>Ctrl+C&lt;/code> suivi de &lt;code>y&lt;/code> (en anglais) ou &lt;code>o&lt;/code> (en français) dans le terminal où la commande &lt;code>jupyter lab&lt;/code> a été exécutée.&lt;/p>
-&lt;h3 id="sur-le-bureau-de-lutes">Sur le bureau de l&amp;rsquo;UTES&lt;/h3>
-&lt;p>&lt;strong>Avertissement:&lt;/strong>
-Disponible seulement pour les personnes disposant d&amp;rsquo;un accès informatique à Sorbonne Université.&lt;/p>
-&lt;p>Aller sur le site de l&amp;rsquo;&lt;a href="https://lutes.upmc.fr/bdl-ext.php" target="_blank" rel="noopener">UTES&lt;/a> puis cliquer sur l&amp;rsquo;icône correspondante à votre système d&amp;rsquo;exploitation et suivez les instructions pour vous connecter au bureau à distance.&lt;/p>
-&lt;p>Pour lancer Jupyter Lab une fois connecté au bureau de l&amp;rsquo;UTES:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>cliquer sur la loupe située en haut;&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>taper &lt;code>jupyter lab&lt;/code> dans le champs de rechercher suivi de la touche &lt;code>ENTRÉE&lt;/code>;&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>cliquer sur «JUPYTER LAB POUR PYTHON 3.6»;&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>ne pas fermer la fenêtre noire avant d&amp;rsquo;avoir terminé de travailler sous Jupyter Lab.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="en-ligne-sans-installation">En ligne sans installation&lt;/h3>
-&lt;p>Pour les personnes ne pouvant ou ne voulant pas installer Python et les dépendances nécessaires sur leur propre ordinateur et n&amp;rsquo;ayant pas accès au bureau de l&amp;rsquo;UTES, il est possible d&amp;rsquo;utiliser Jupyter Lab en ligne avec GESIS en cliquant &lt;a href="https://notebooks.gesis.org/binder/v2/gh/guillod/python/master?urlpath=lab/tree/chap01.ipynb" target="_blank" rel="noopener">ici&lt;/a>.
-Aucun compte n&amp;rsquo;est nécessaire mais les documents stockés sans compte utilisateur sont automatiquement effacés donc il faut impérativement les sauvegarder sur votre propre ordinateur avant de quitter. Il est également possible de créer un compte utilisateur sur GESIS à l&amp;rsquo;adresse &lt;a href="https://notebooks.gesis.org/hub/" target="_blank" rel="noopener">https://notebooks.gesis.org/hub/&lt;/a>, ce qui permet ensuite de sauvegarder vos documents. Une fois authentifié sur GESIS, entrer les paramètres suivants pour avoir accès aux énoncés des exercices:&lt;/p>
-&lt;center>&lt;img src="https://python.guillod.org/fig/gesis.png" style="width:90%;max-width:900px;">&lt;/center>
-&lt;p>Pour utiliser Jupyter Lab plutôt que Jupyter Nootebook sur GESIS, il suffit de remplacer &lt;code>tree&lt;/code> par &lt;code>lab&lt;/code> à la fin de l&amp;rsquo;URL.&lt;/p>
-&lt;p>Sinon différents services offrent la possibilité d&amp;rsquo;utiliser gratuitement Jupyter Lab après création d&amp;rsquo;un compte:&lt;/p>
+&lt;h3 id="with-anaconda-navigator">With Anaconda Navigator&lt;/h3>
+&lt;p>If Anaconda or Miniconda has been installed, simply launch Anaconda Navigator and click on the &amp;ldquo;jupyterlab&amp;rdquo; icon:&lt;/p>
+&lt;center>&lt;img src="https://paulliautaud.github.io/fig/anaconda.png" style="width:90%;max-width:900px;">&lt;/center>
+&lt;h3 id="in-the-command-line">In the command line&lt;/h3>
+&lt;p>To run Jupyter Lab from the command line, type &lt;code>jupyter lab&lt;/code> in a terminal. To quit, you have to click on &amp;ldquo;Shutdown&amp;rdquo; in the &amp;ldquo;File&amp;rdquo; menu of the Jupyter Lab window. It is also possible to type &lt;code>Ctrl+C&lt;/code> followed by &lt;code>y&lt;/code> (in English) or &lt;code>o&lt;/code> (in French) in the terminal where the &lt;code>jupyter lab&lt;/code> command was executed.&lt;/p>
+&lt;h3 id="online-without-installation">Online without installation&lt;/h3>
+&lt;p>For people who cannot or do not want to install Python and the necessary dependencies on their own computer, it is possible to use Jupyter Lab online with GESIS by clicking &lt;a href="https://mybinder.org/v2/gh/paulliautaud/python_stan/HEAD" target="_blank" rel="noopener">here&lt;/a>.
+No account is required but documents stored without a user account are automatically deleted so it is imperative to save them on your own computer before leaving. It is also possible to create a user account on GESIS at &lt;a href="https://notebooks.gesis.org/hub/" target="_blank" rel="noopener">https://notebooks.gesis.org/hub/&lt;/a>, which then allows you to save your documents.&lt;/p>
+&lt;p>Otherwise, different services offer the possibility to use Jupyter Lab for free after creating an account:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;a href="https://cocalc.com/" target="_blank" rel="noopener">CoCalc&lt;/a>&lt;/p>
@@ -125,41 +104,42 @@ Aucun compte n&amp;rsquo;est nécessaire mais les documents stockés sans compte
 &lt;p>&lt;a href="https://colab.research.google.com/" target="_blank" rel="noopener">Google Colaboratory&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="16-utilisation-de-jupyter-lab">1.6 Utilisation de Jupyter Lab&lt;/h1>
-&lt;p>Une fois Jupyter Lab lancé, la fenêtre suivante doit apparaître dans un navigateur:&lt;/p>
-&lt;center>&lt;img src="https://python.guillod.org/fig/jupyter.png" style="width:90%;max-width:900px;">&lt;/center>
-&lt;p>Jupyter Lab permet essentiellement de traiter trois types de documents: les &lt;strong>notebooks&lt;/strong>, les &lt;strong>scripts&lt;/strong> et les &lt;strong>terminaux&lt;/strong>. Un notebook est constitué de cellules qui peuvent contenir soit du code soit du texte au format Markdown. Les cellules peuvent être évaluées de manière interactive à la demande, ce qui permet une grande flexibilité. Un script Python est simplement un fichier texte contenant des instructions Python. Il s&amp;rsquo;exécute en entier de A à Z et il n&amp;rsquo;est pas possible d&amp;rsquo;interagir interactivement avec lui pendant son exécution (à moins que cela n&amp;rsquo;ait été explicitement programmé). Pour exécuter un script python il est nécessaire d&amp;rsquo;ouvrir un terminal.&lt;/p>
-&lt;p>Un notebook est composé de cellules, ces dernières pouvant être principalement de deux types: des cellules de code et des cellules de texte, comme représenté sur la figure suivante.
-Les cellules de texte peuvent contenir des formules LaTeX.&lt;/p>
-&lt;center>&lt;img src="https://python.guillod.org/fig/jupyterlab.png" style="width:90%;max-width:900px;">&lt;/center>
-&lt;p>La documentation détaillée de Jupyter Lab est disponible &lt;a href="https://jupyterlab.readthedocs.io/" target="_blank" rel="noopener">ici&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>Commandes de base:&lt;/strong>&lt;/p>
+&lt;h2 id="using-jupyter-lab">Using Jupyter Lab&lt;/h2>
+&lt;p>Once Jupyter Lab is launched, the following window should appear in a browser:&lt;/p>
+&lt;center>&lt;img src="https://paulliautaud.github.io/fig/jupyter_lab.png" style="width:90%;max-width:900px;">&lt;/center>
+&lt;p>Jupyter Lab essentially allows for three types of documents: &lt;strong>notebooks&lt;/strong>, &lt;strong>scripts&lt;/strong> and &lt;strong>terminals&lt;/strong>. A notebook consists of cells that can contain either code or text in Markdown format. The cells can be evaluated interactively on demand, which allows great flexibility. A Python script is simply a text file containing Python instructions. It runs from start to finish and it is not possible to interact with it interactively during its execution (unless it has been explicitly programmed). To execute a python script it is necessary to open a terminal.&lt;/p>
+&lt;p>A notebook is composed of cells, which can be of two main types: code cells and text cells, as shown in the following figure.
+Text cells can contain LaTeX formulas.&lt;/p>
+&lt;center>&lt;img src="https://paulliautaud.github.io/fig/jupyter_lab_2.png" style="width:90%;max-width:900px;">&lt;/center>
+&lt;p>Detailed documentation for Jupyter Lab is available &lt;a href="https://jupyterlab.readthedocs.io/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Basic commands:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>Créer un nouveau fichier: cliquer sur le bouton &lt;code>PLUS&lt;/code> situé en haut à gauche, puis choisir le type de fichier à créer.&lt;/p>
+&lt;p>Create a new file: click on the &lt;code>PLUS&lt;/code> button at the top left, then choose the type of file to create.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Renommer un fichier: cliquer avec le second bouton de la souris sur le titre du notebook (soit dans l&amp;rsquo;onglet, soit dans la liste des fichiers).&lt;/p>
+&lt;p>Rename a file: click with the second mouse button on the title of the notebook (either in the tab or in the file list).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Changer le type de cellules: menu déroulant permettant de choisir entre «Code» et «Markdown».&lt;/p>
+&lt;p>Change the cell type: drop-down menu to choose between &amp;ldquo;Code&amp;rdquo; and &amp;ldquo;Markdown&amp;rdquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Exécuter une cellule: combinaison des touches &lt;code>SHIFT+ENTRÉE&lt;/code>.&lt;/p>
+&lt;p>Execute a cell: combination of &lt;code>SHIFT+ENTER&lt;/code> keys.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Exécuter un script: taper &lt;code>python nomduscript.py&lt;/code> dans un terminal pour exécuter le script &lt;code>nomduscript.py&lt;/code>.&lt;/p>
+&lt;p>Run a script: type &lt;code>python scriptname.py&lt;/code> in a terminal to run the script &lt;code>scriptname.py&lt;/code>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Réorganiser les cellules: cliquer-déposer.&lt;/p>
+&lt;p>Rearrange cells: click and drop.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Juxtaposer des onglets: cliquer-déposer.&lt;/p>
+&lt;p>Juxtaposing tabs: click and drop.&lt;/p>
 &lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Remerciements:&lt;/strong> Merci à Johann Faouzi, Nicolas Lantos et Marie Postel pour leurs relectures attentives de ce recueil et pour les nombreuses corrections et suggestions. Merci également à Cédric Boutillier, Cindy Guichard et Raphaël Zanella pour avoir pointé différentes erreurs.&lt;/p></description></item><item><title>Chapter 1 - Data Structures</title><link>https://paulliautaud.github.io/teaching/python/01_python_basis/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://paulliautaud.github.io/teaching/python/01_python_basis/</guid><description>&lt;p>The associated slides are the following :&lt;/p>
-&lt;p>You can run the first pratical &lt;a href="https://mybinder.org/v2/gh/paulliautaud/python_stan/HEAD" target="_blank" rel="noopener">here&lt;/a> or download it &lt;a href="https://paulliautaud.github.io/tp/chap01.ipynb">there&lt;/a> &lt;a href="https://paulliautaud.github.io/tp/chap01.ipynb"> tp &lt;/a> &lt;br>
-&lt;i class="fas fa-exclamation pr-1 fa-fw">&lt;/i> In case you directly run it, do save your work locally on your machines, otherwise it will be lost!&lt;/p>
+&lt;/ul></description></item><item><title>Chapter 1 - Data Structures</title><link>https://paulliautaud.github.io/teaching/python/01_python_basis/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://paulliautaud.github.io/teaching/python/01_python_basis/</guid><description>&lt;hr>
+&lt;p>The associated slides are the following &lt;a href="slides/00_python_pres_slides.html">👨🏼‍🏫&lt;/a>.&lt;/p>
+&lt;p>📖 You can run the first pratical &lt;a href="https://mybinder.org/v2/gh/paulliautaud/python_stan/HEAD" target="_blank" rel="noopener">here&lt;/a> or download it &lt;a href="https://paulliautaud.github.io/tp/Structures_données.ipynb" download> there&lt;/a>. &lt;br>
+⚠️ In case you directly run it, do save your work locally on your machines, otherwise it will be lost!&lt;/p>
+&lt;hr>
 &lt;h2 id="tuple">Tuple&lt;/h2>
 &lt;p>A &lt;strong>tuple&lt;/strong> is an immutable array data structure in Python with the following characteristics:&lt;/p>
 &lt;ul>
@@ -168,17 +148,6 @@ Les cellules de texte peuvent contenir des formules LaTeX.&lt;/p>
 &lt;li>can not be modified
 We can generate tuples using curve brackets.&lt;/li>
 &lt;/ul>
-&lt;div class="thm">
-&lt;p id="thm:me" class="thm-title thm-theorem"> &lt;a href="#thm%3ame" class="thm-anchor">Theorem 1 (of me).&lt;/a>&lt;/p>
-&lt;div class="thm-inner thm-theorem">
-This theorem proves that covfefe.
-&lt;/div>
-&lt;/div>
-&lt;div class="thm">
-&lt;div class="thm-inner-proof">&lt;p id="thm-proof-1" class="thm-title-proof">&lt;a href="#thm-proof-1-end">&lt;i class="fas fa-arrow-circle-down">&lt;/i>&lt;/a>Proof.&lt;/p>The proof is very good. I like proof. I have big proof.
-&lt;p class="thm-end-proof" id="thm-proof-1-end">&lt;i class="fas fa-square">&lt;/i> &lt;a href="#thm-proof-1">&lt;i class="fas fa-arrow-circle-up">&lt;/i>&lt;/a>&lt;/p>
-&lt;/div>
-&lt;/div>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">numpy&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">np&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">math&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
@@ -190,9 +159,6 @@ This theorem proves that covfefe.
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
 &lt;p>Note: ugfheijoksdplzk&lt;/p>
 &lt;/blockquote>
-&lt;p>L&amp;rsquo;entier des chapitres est disponible au format
-&lt;a href="https://python.guillod.org/" target="_blank" rel="noopener">HTML&lt;/a> et &lt;a href="https://python.guillod.org/python.pdf" target="_blank" rel="noopener">PDF&lt;/a>.
-Ce notebook peut également être exécuté sur &lt;a href="https://notebooks.gesis.org/binder/v2/gh/guillod/python/master?urlpath=lab/tree/chap02.ipynb" target="_blank" rel="noopener">GESIS&lt;/a>.&lt;/p>
 &lt;h1 id="1---structures-de-données">1 - Structures de données&lt;/h1>
 &lt;div id="ch:structures">&lt;/div>
 &lt;p>Pour représenter des structures de données, Python propose quatre types de base: les listes (type &lt;code>list&lt;/code>), les tuples (type &lt;code>tuple&lt;/code>), les ensembles (type &lt;code>set&lt;/code>) et les dictionnaires (type &lt;code>dict&lt;/code>). Le but de ce chapitre est de montrer les différences fondamentales entre ces structures de données et d&amp;rsquo;expliquer à quoi elles sont le plus adaptées. La documentation détaillée sur les structures de données est disponible &lt;a href="https://docs.python.org/fr/3/tutorial/datastructures.html" target="_blank" rel="noopener">ici&lt;/a>.&lt;/p>
